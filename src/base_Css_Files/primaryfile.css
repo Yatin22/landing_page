@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap');      /*-----------heading font family----*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');         /*--------------body font family---------*/
+
+/*---------@import url('/css/colors.css');--------------------ho to import*/
+
+* {
+  box-sizing: border-box;
+}
+html,body {
+ box-sizing: border-box;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+:root {
+  --primarycolor: #1770E6;/*-------- primary blue color of our website---------------*/
+  --standardblack: #3e3e41;
+  --greycolor: #B8BCBE;/*-------------------------grey color of website---------------------*/
+  --whitecolor: #fff;/*----------------------white colour for white---------------------------*/
+  --headingfontfamily : "Catamaran";/*-----------------heading font family------------------*/
+  --bodyfontfamily: "Roboto";/*---------------tags(p/span/a) will have this font---------------*/
+  --headerheight: 60px;/*---------------------------navbar height---------------------*/
+}
+
+html,body {
+
+  box-sizing: border-box;
+}
+
+
+.primaryheading , .secondaryheading, .tertiaryheading{
+letter-spacing: 1px;
+font-family: var(--headingfontfamily);
+color:var(--standardblack);
+}
+.primaryheading{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.secondaryheading{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.tertiaryheading{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.tertiaryheadingupdated {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--standardblack);
+}
+@media only screen and (max-width: 800px){
+.primaryheading {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+}
+
+button{
+    cursor:pointer;
+}
+
+p,a,span,input,label,div,button{
+  font-family: var(--bodyfontfamily);
+
+ }
+ p,span,input{
+     letter-spacing: 0.8px;
+ }
+
+ ul,li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ a{
+   margin: 0px;
+    padding: 0px;
+  text-decoration: none;
+cursor:pointer;
+ }

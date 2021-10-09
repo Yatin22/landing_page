@@ -1,0 +1,140 @@
+/*---------------------------Second part starts here----------------------------*/
+
+.homepage_services_part {
+    width: 96%;
+    margin: auto;
+}
+
+
+/*-----------------customer_service---------------------------*/
+
+.customer_service {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    box-shadow: 0 3px 20px 0px rgb(0 0 0 / 30%);
+    background-image: radial-gradient( circle 621px at 25.3% 13.8%, rgba(255, 255, 255, 1) 0%, rgba(234, 236, 255, 1) 90%);
+    margin: 50px 0px;
+}
+
+.customer_service_img,
+.customer_service_text {
+    width: 50%;
+    margin:auto;
+    padding: 20px;
+}
+
+.customer_service_img {
+    height:500px;
+}
+
+.customer_service_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.customer_service_text h3 {
+    line-height: 26px;
+    font-weight: 500;
+    color: #ee741f;
+    margin-bottom: 5px;
+}
+
+.customer_service_text p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #4d4d4d;
+    margin-bottom:1.5rem;
+}
+
+.customer_service_text button {
+    font-size: 20px;
+    width: 50%;
+    height: 40px;
+    margin: 30px auto;
+    background-color: #146eb4;
+    border-radius: 5px;
+    color: #fff;
+    border: 0;
+    outline: none;
+}
+
+
+/*-----------------customer_service ends---------------------------*/
+
+@media only screen and ( max-width: 800px) {
+
+    /*----------------THIRD SLIDE ENDS---------------------------*/
+    /*-----------------customer_service---------------------------*/
+    .customer_service {
+        width: 100%;
+        display: block;
+        flex-flow: row wrap;
+        box-shadow: 0 3px 20px 0px rgb(0 0 0 / 30%);
+        background-image: radial-gradient( circle 621px at 25.3% 13.8%, rgba(255, 255, 255, 1) 0%, rgba(234, 236, 255, 1) 90%);
+        margin: 30px 0px;
+    }
+    .customer_service_img,
+    .customer_service_text {
+        width: 98%;
+        text-align: center;
+        padding: 10px;
+    }
+    .customer_service_img {
+        height: 300px;
+    }
+    .customer_service_img img {
+        width: 100%;
+        height: 100%;
+    }
+    .customer_service_text h1 {
+        font-size: 1.2rem;
+    }
+    .customer_service_text h3 {
+        line-height: 26px;
+        font-weight: 600;
+        font-size: 1rem;
+        color: #ee741f;
+        margin-bottom: 0px;
+    }
+    .customer_service_text p {
+        font-size: 0.8rem;
+    line-height: 20px;
+    color: #4d4d4d;
+    margin-bottom: 0.5rem;
+    }
+    .customer_service_text button {
+        font-size: 16px;
+        width: 100%;
+        height: 30px;
+        background-color: #146eb4;
+        border-radius: 5px;
+        color: #fff;
+        border: 0;
+        text-align: center;
+        outline: none;
+        margin: 10px auto;
+    }
+    .homepage_third {
+        width: 100%;
+        min-height: 300px;
+        padding: 20px 0px;
+        margin-bottom: 20px;
+    }
+    .homepage_third_intro {
+        width: 98%;
+        margin: 0px auto 20px auto;
+    }
+    .homepage_third_intro h1 {
+        font-size: 1.5rem;
+    }
+    .homepage_third_intro p {
+        font-size: 0.8rem;
+    }
+    .homepage_third_facts {
+        width: 100%;
+        display: block;
+        flex-flow: row wrap;
+    }
+    
+}
