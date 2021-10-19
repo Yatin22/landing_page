@@ -1,42 +1,32 @@
 import React from "react";
 import './App.css';
-import Header from "./components/Header/Header";
 import { BrowserRouter as Router, Switch, Route }
   from "react-router-dom";
-import Home from "./components/Home/Home";
-import Footer from "./components/Footer/Footer";
-import Contact from "./Contact/Contact";
-import About from "./About/About";
-import Login from "./Login/Login";
+import Landing from "./Main/Main JS/Landing";
+import AccMain from "./Main/Main JS/AccMain";
 
 
-export default function App({location}) {
+
+
+
+export default function App({ location }) {
   return (
     <>
       <Router>
-      <Route path="/" render={(props) => (props.location.pathname !== "/customer-login") && 
-    <Header />}>
-    </Route>
 
         <Switch>
-          <Route path="/customer-login">
-            <Login/>
+          <Route path="/customer">
+            <AccMain/>
           </Route>
-          <Route path="/about">
-            <About/>
-          </Route>
-          <Route path="/contact">
-            <Contact/>
+          <Route path="/business">
+
           </Route>
           <Route path="/">
-            <Home />
+            <Landing />
           </Route>
         </Switch>
-          <Route path="/" render={(props) => (props.location.pathname !== "/customer-login") && 
-        <Footer/>}>
-    </Route>
-          
-    </Router>
+
+      </Router>
     </>
   );
 }

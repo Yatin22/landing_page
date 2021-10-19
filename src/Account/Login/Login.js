@@ -1,7 +1,7 @@
 import React from 'react'
 import './Login.css'
-import customerview from '../images/auth/customerview.png'
-import Bluelogo from '../images/base/logo_blue.png'
+import customerview from '../../Landing page/images/auth/customerview.png'
+import Bluelogo from '../../Landing page/images/base/logo_blue.png'
 import { Link } from 'react-router-dom'
 
 function Login() {
@@ -33,24 +33,19 @@ function Login() {
                 <div class="before_login_pc_body_right_body">
                     {/* {% if page == 'outside' %} */}
                     <div class="before_login_pc_body_right_box">
-                        {/* {% else %} */}
                         <form action="{% url 'inside_signup' %}" method="POST"         
                          class="before_login_pc_body_right_box">
-                            {/* {% endif %} {% csrf_token %} */}
+                           
                             <div class="before_login_pc_body_right_top">
                                 <div class="before_login_pc_body_right_box_header">
-                                    {/* {% if back_link %} */}
-                                        <Link to="/" class="before_login_pc_body_right_box_header_arrow">
-                                    {/* {% else %} */}
-                                        <Link to="/" class="before_login_pc_body_right_box_header_arrow">
-                                    {/* {% endif %} */}
+                                   
+                                        <a href="/" class="before_login_pc_body_right_box_header_arrow">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-chevron-left" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd"
                                             d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
                                     </svg>
-                                </Link>
-                                </Link>
+                                </a>
                                 </div>
 
                                 <div class="before_login_pc_body_right_box_up">
@@ -129,11 +124,14 @@ function Login() {
                                 </div>
                                 <div class="before_login_pc_body_right_box_middle_account">
                                     <span class="link_text">Don't have an Account ?</span>
-                                    <span class="link_goto"><a href="{% url 'customer-signup' %}">Sign Up</a></span>
-                                    <br/>
-                                    <span class="before_login_pc_body_right_box_base_text">
-                                    @Storestreak 2021. All Right Reserved
-                                    </span>
+                                    <span class="link_goto"><Link to="/customer/customer-signup">Sign Up</Link></span>
+                                
+                                    
+                                </div>
+                                <div id="basehide" className="before_login_pc_body_right_box_base">
+                                    <span className="before_login_pc_body_right_box_base_text">
+                                        @Storestreak 2021. All Right Reserved
+                            </span>
                                 </div>
                             </div>
 

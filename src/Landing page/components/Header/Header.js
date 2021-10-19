@@ -8,6 +8,7 @@ function Header() {
     const [ClassSidebar, setClassSidebar] = useState("sidebar")
     const [open, setopen] = useState({display:"block"})
     const [close, setclose] = useState({display:"none"})
+   
     // This is for side navbar phone
     const control_side_navbar=()=>{
         if(ClassSidebar ===("sidebar")){
@@ -16,10 +17,8 @@ function Header() {
         }
         else{
             side_navbar_toggle_close()
-        }
-      
+        } 
     }
-    
     const side_navbar_toggle_open=()=>{
         setClassSidebar("sidebarWhileOpen sidebar")
         setclose({
@@ -55,8 +54,8 @@ function Header() {
                 <ul>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/about">About</Link></li>
-                    <li><Link to="/customer-login">Login</Link></li>
-                    <li><Link to="/customer-signup">Signup</Link></li>
+                    <li><a href="/customer/customer-login">Login</a></li>
+                    <li><a href="/customer/customer-signup" >Signup</a></li>
                     <li><Link to="/contact">Contact Us</Link></li>
                 </ul>
             </nav>
@@ -103,7 +102,7 @@ function Header() {
                     <span className="text"> Home</span>
                   </li>
                 </Link>
-                    <Link to="/customer-login">
+                    <a href="/customer/customer-login">
                          <li>
                             <span className="sidebar_icons">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-person-check-fill" viewBox="0 0 16 16">
@@ -113,10 +112,10 @@ function Header() {
                                 </span>
                             <span className="text">Login</span>
                         </li>
-                    </Link>
+                    </a>
 
 
-                    <a href="{% url 'customer-signup' %}">
+                    <a href="/customer/customer-signup" >
                          <li>
                             <span className="sidebar_icons">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-person-plus-fill" viewBox="0 0 16 16">

@@ -15,7 +15,7 @@ function Footer() {
                         <ul>
                             <li><Link className="link" to="/customer-login">Customer Login</Link></li>
                             <li><Link className="link" to="/business-login">Seller Login</Link></li>
-                            <li><Link className="link" to="/customer-signup">Be a Customer</Link></li>
+                            <li><a href="/customer/customer-signup">Be a Customer</a></li>
                             <li><Link className="link" to="/contact-us">Be a Seller</Link></li>
                         </ul>
                         <ul>
